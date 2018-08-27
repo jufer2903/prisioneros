@@ -31,32 +31,28 @@ int main(int argc, char *argv[])
     
     n1=strtok(NULL," ");
     s=atoi(n1);
-    
-    numero=s-1;
-    
-    for (k=1;k<=m;k++)
-    { 
-        if (numero == n)
-        {
-        numero=0;
-        }
-        numero=numero+1;
-        
-        
-    }
-    vec[i]=numero;
-    
-    
-    
     if (s<=n)
     {
-         
-         }
+             
+             numero=s-1;
+    
+             for (k=1;k<=m;k++)
+                 {         
+                 if (numero == n)
+                    {
+                     numero=0;
+                    }
+                 numero=numero+1;
+          
+                 }
+             vec[i]=numero;
+    }
          else
          {
              cout<<"\nERROR!!!";
-             }
-             }
+         }
+    }
+    
              cout<<"\n--------------\n";
              for (k=0;k<t;k++)
              {
